@@ -59,25 +59,5 @@ namespace CSFPOSWare.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ButtonBGBlank {
-            get {
-                object obj = ResourceManager.GetObject("ButtonBGBlank", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ButtonBGBlankPressed {
-            get {
-                object obj = ResourceManager.GetObject("ButtonBGBlankPressed", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

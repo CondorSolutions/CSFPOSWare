@@ -33,13 +33,16 @@
             this.lblAmountDue = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.lblCheckNo = new System.Windows.Forms.Label();
-            this.Bill5 = new System.Windows.Forms.Button();
-            this.Bill20 = new System.Windows.Forms.Button();
-            this.Bill1000 = new System.Windows.Forms.Button();
-            this.Bill500 = new System.Windows.Forms.Button();
-            this.Bill100 = new System.Windows.Forms.Button();
-            this.Bill50 = new System.Windows.Forms.Button();
+            this.lvTenders = new System.Windows.Forms.ListView();
+            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtBalance = new System.Windows.Forms.TextBox();
+            this.Label3 = new System.Windows.Forms.Label();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.txtTenderAmount = new System.Windows.Forms.TextBox();
+            this.lblTenderAmount = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
             this.ClearTenderAmountButton = new System.Windows.Forms.Button();
             this.BackspaceButton = new System.Windows.Forms.Button();
             this.Button12 = new System.Windows.Forms.Button();
@@ -52,16 +55,14 @@
             this.Button4 = new System.Windows.Forms.Button();
             this.Button3 = new System.Windows.Forms.Button();
             this.Button2 = new System.Windows.Forms.Button();
-            this.lvTenders = new System.Windows.Forms.ListView();
-            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.txtBalance = new System.Windows.Forms.TextBox();
-            this.Label3 = new System.Windows.Forms.Label();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.txtTenderAmount = new System.Windows.Forms.TextBox();
-            this.lblTenderAmount = new System.Windows.Forms.Label();
-            this.CloseButton = new System.Windows.Forms.Button();
             this.Button1 = new System.Windows.Forms.Button();
+            this.Bill5 = new System.Windows.Forms.Button();
+            this.Bill20 = new System.Windows.Forms.Button();
+            this.Bill1000 = new System.Windows.Forms.Button();
+            this.Bill500 = new System.Windows.Forms.Button();
+            this.Bill100 = new System.Windows.Forms.Button();
+            this.Bill50 = new System.Windows.Forms.Button();
+            this.Bill10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,127 +111,85 @@
             this.lblCheckNo.TabIndex = 7;
             this.lblCheckNo.Text = "000";
             // 
-            // Bill5
+            // lvTenders
             // 
-            this.Bill5.BackColor = System.Drawing.Color.LightBlue;
-            this.Bill5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bill5.BackgroundImage")));
-            this.Bill5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bill5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Bill5.FlatAppearance.BorderSize = 0;
-            this.Bill5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Bill5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.Bill5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bill5.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bill5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bill5.Location = new System.Drawing.Point(21, 50);
-            this.Bill5.Name = "Bill5";
-            this.Bill5.Size = new System.Drawing.Size(215, 76);
-            this.Bill5.TabIndex = 49;
-            this.Bill5.Text = "₱5";
-            this.Bill5.UseVisualStyleBackColor = false;
-            this.Bill5.Click += new System.EventHandler(this.BillsButton_Click);
-            this.Bill5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseDown);
-            this.Bill5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseUp);
+            this.lvTenders.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lvTenders.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvTenders.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ColumnHeader1,
+            this.ColumnHeader2});
+            this.lvTenders.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvTenders.Location = new System.Drawing.Point(266, 393);
+            this.lvTenders.Name = "lvTenders";
+            this.lvTenders.Size = new System.Drawing.Size(223, 117);
+            this.lvTenders.TabIndex = 56;
+            this.lvTenders.UseCompatibleStateImageBehavior = false;
             // 
-            // Bill20
+            // ColumnHeader1
             // 
-            this.Bill20.BackColor = System.Drawing.Color.LightBlue;
-            this.Bill20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bill20.BackgroundImage")));
-            this.Bill20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bill20.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Bill20.FlatAppearance.BorderSize = 0;
-            this.Bill20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Bill20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.Bill20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bill20.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bill20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bill20.Location = new System.Drawing.Point(21, 132);
-            this.Bill20.Name = "Bill20";
-            this.Bill20.Size = new System.Drawing.Size(215, 76);
-            this.Bill20.TabIndex = 48;
-            this.Bill20.Text = "₱20";
-            this.Bill20.UseVisualStyleBackColor = false;
-            this.Bill20.Click += new System.EventHandler(this.BillsButton_Click);
+            this.ColumnHeader1.Width = 115;
             // 
-            // Bill1000
+            // ColumnHeader2
             // 
-            this.Bill1000.BackColor = System.Drawing.Color.LightBlue;
-            this.Bill1000.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bill1000.BackgroundImage")));
-            this.Bill1000.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bill1000.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Bill1000.FlatAppearance.BorderSize = 0;
-            this.Bill1000.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Bill1000.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.Bill1000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bill1000.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bill1000.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bill1000.Location = new System.Drawing.Point(21, 460);
-            this.Bill1000.Name = "Bill1000";
-            this.Bill1000.Size = new System.Drawing.Size(215, 76);
-            this.Bill1000.TabIndex = 47;
-            this.Bill1000.Text = "₱1000";
-            this.Bill1000.UseVisualStyleBackColor = false;
-            this.Bill1000.Click += new System.EventHandler(this.BillsButton_Click);
+            this.ColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ColumnHeader2.Width = 90;
             // 
-            // Bill500
+            // txtBalance
             // 
-            this.Bill500.BackColor = System.Drawing.Color.LightBlue;
-            this.Bill500.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bill500.BackgroundImage")));
-            this.Bill500.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bill500.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Bill500.FlatAppearance.BorderSize = 0;
-            this.Bill500.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Bill500.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.Bill500.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bill500.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bill500.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bill500.Location = new System.Drawing.Point(21, 378);
-            this.Bill500.Name = "Bill500";
-            this.Bill500.Size = new System.Drawing.Size(215, 76);
-            this.Bill500.TabIndex = 46;
-            this.Bill500.Text = "₱500";
-            this.Bill500.UseVisualStyleBackColor = false;
-            this.Bill500.Click += new System.EventHandler(this.BillsButton_Click);
+            this.txtBalance.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtBalance.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBalance.Location = new System.Drawing.Point(343, 516);
+            this.txtBalance.Name = "txtBalance";
+            this.txtBalance.ReadOnly = true;
+            this.txtBalance.Size = new System.Drawing.Size(146, 25);
+            this.txtBalance.TabIndex = 55;
+            this.txtBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // Bill100
+            // Label3
             // 
-            this.Bill100.BackColor = System.Drawing.Color.LightBlue;
-            this.Bill100.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bill100.BackgroundImage")));
-            this.Bill100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bill100.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Bill100.FlatAppearance.BorderSize = 0;
-            this.Bill100.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Bill100.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.Bill100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bill100.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bill100.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bill100.Location = new System.Drawing.Point(21, 296);
-            this.Bill100.Name = "Bill100";
-            this.Bill100.Size = new System.Drawing.Size(215, 76);
-            this.Bill100.TabIndex = 45;
-            this.Bill100.Text = "₱100";
-            this.Bill100.UseVisualStyleBackColor = false;
-            this.Bill100.Click += new System.EventHandler(this.BillsButton_Click);
+            this.Label3.AutoSize = true;
+            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label3.Location = new System.Drawing.Point(266, 519);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(71, 20);
+            this.Label3.TabIndex = 54;
+            this.Label3.Text = "Balance:";
             // 
-            // Bill50
+            // Label1
             // 
-            this.Bill50.BackColor = System.Drawing.Color.LightBlue;
-            this.Bill50.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bill50.BackgroundImage")));
-            this.Bill50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bill50.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Bill50.FlatAppearance.BorderSize = 0;
-            this.Bill50.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Bill50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.Bill50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bill50.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bill50.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bill50.Location = new System.Drawing.Point(21, 214);
-            this.Bill50.Name = "Bill50";
-            this.Bill50.Size = new System.Drawing.Size(215, 76);
-            this.Bill50.TabIndex = 44;
-            this.Bill50.Text = "₱50";
-            this.Bill50.UseVisualStyleBackColor = false;
-            this.Bill50.Click += new System.EventHandler(this.BillsButton_Click);
+            this.Label1.AutoSize = true;
+            this.Label1.BackColor = System.Drawing.Color.Transparent;
+            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label1.Location = new System.Drawing.Point(262, 372);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(71, 20);
+            this.Label1.TabIndex = 53;
+            this.Label1.Text = "Tenders:";
+            // 
+            // txtTenderAmount
+            // 
+            this.txtTenderAmount.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtTenderAmount.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTenderAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenderAmount.Location = new System.Drawing.Point(267, 61);
+            this.txtTenderAmount.MaxLength = 11;
+            this.txtTenderAmount.Name = "txtTenderAmount";
+            this.txtTenderAmount.ReadOnly = true;
+            this.txtTenderAmount.Size = new System.Drawing.Size(174, 25);
+            this.txtTenderAmount.TabIndex = 51;
+            this.txtTenderAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblTenderAmount
+            // 
+            this.lblTenderAmount.AutoSize = true;
+            this.lblTenderAmount.BackColor = System.Drawing.Color.Transparent;
+            this.lblTenderAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenderAmount.Location = new System.Drawing.Point(262, 34);
+            this.lblTenderAmount.Name = "lblTenderAmount";
+            this.lblTenderAmount.Size = new System.Drawing.Size(123, 20);
+            this.lblTenderAmount.TabIndex = 50;
+            this.lblTenderAmount.Text = "Tender Amount:";
             // 
             // btnReset
             // 
@@ -252,6 +211,28 @@
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseDown);
             this.btnReset.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseUp);
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.BackColor = System.Drawing.Color.LightBlue;
+            this.CloseButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CloseButton.BackgroundImage")));
+            this.CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CloseButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.CloseButton.FlatAppearance.BorderSize = 0;
+            this.CloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.CloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CloseButton.Location = new System.Drawing.Point(686, 489);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(70, 60);
+            this.CloseButton.TabIndex = 69;
+            this.CloseButton.Text = "X";
+            this.CloseButton.UseVisualStyleBackColor = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            this.CloseButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseDown);
+            this.CloseButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseUp);
             // 
             // ClearTenderAmountButton
             // 
@@ -517,108 +498,6 @@
             this.Button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseDown);
             this.Button2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseUp);
             // 
-            // lvTenders
-            // 
-            this.lvTenders.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lvTenders.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lvTenders.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ColumnHeader1,
-            this.ColumnHeader2});
-            this.lvTenders.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvTenders.Location = new System.Drawing.Point(266, 393);
-            this.lvTenders.Name = "lvTenders";
-            this.lvTenders.Size = new System.Drawing.Size(223, 117);
-            this.lvTenders.TabIndex = 56;
-            this.lvTenders.UseCompatibleStateImageBehavior = false;
-            // 
-            // ColumnHeader1
-            // 
-            this.ColumnHeader1.Width = 115;
-            // 
-            // ColumnHeader2
-            // 
-            this.ColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ColumnHeader2.Width = 90;
-            // 
-            // txtBalance
-            // 
-            this.txtBalance.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtBalance.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBalance.Location = new System.Drawing.Point(343, 516);
-            this.txtBalance.Name = "txtBalance";
-            this.txtBalance.ReadOnly = true;
-            this.txtBalance.Size = new System.Drawing.Size(146, 25);
-            this.txtBalance.TabIndex = 55;
-            this.txtBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Label3
-            // 
-            this.Label3.AutoSize = true;
-            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(266, 519);
-            this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(71, 20);
-            this.Label3.TabIndex = 54;
-            this.Label3.Text = "Balance:";
-            // 
-            // Label1
-            // 
-            this.Label1.AutoSize = true;
-            this.Label1.BackColor = System.Drawing.Color.Transparent;
-            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(262, 372);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(71, 20);
-            this.Label1.TabIndex = 53;
-            this.Label1.Text = "Tenders:";
-            // 
-            // txtTenderAmount
-            // 
-            this.txtTenderAmount.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtTenderAmount.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTenderAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenderAmount.Location = new System.Drawing.Point(267, 61);
-            this.txtTenderAmount.MaxLength = 11;
-            this.txtTenderAmount.Name = "txtTenderAmount";
-            this.txtTenderAmount.ReadOnly = true;
-            this.txtTenderAmount.Size = new System.Drawing.Size(174, 25);
-            this.txtTenderAmount.TabIndex = 51;
-            this.txtTenderAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lblTenderAmount
-            // 
-            this.lblTenderAmount.AutoSize = true;
-            this.lblTenderAmount.BackColor = System.Drawing.Color.Transparent;
-            this.lblTenderAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenderAmount.Location = new System.Drawing.Point(262, 34);
-            this.lblTenderAmount.Name = "lblTenderAmount";
-            this.lblTenderAmount.Size = new System.Drawing.Size(123, 20);
-            this.lblTenderAmount.TabIndex = 50;
-            this.lblTenderAmount.Text = "Tender Amount:";
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.BackColor = System.Drawing.Color.LightBlue;
-            this.CloseButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CloseButton.BackgroundImage")));
-            this.CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CloseButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.CloseButton.FlatAppearance.BorderSize = 0;
-            this.CloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.CloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseButton.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CloseButton.Location = new System.Drawing.Point(686, 489);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(70, 60);
-            this.CloseButton.TabIndex = 69;
-            this.CloseButton.Text = "X";
-            this.CloseButton.UseVisualStyleBackColor = false;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
-            this.CloseButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseDown);
-            this.CloseButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseUp);
-            // 
             // Button1
             // 
             this.Button1.BackColor = System.Drawing.Color.LightBlue;
@@ -641,12 +520,147 @@
             this.Button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseDown);
             this.Button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseUp);
             // 
+            // Bill5
+            // 
+            this.Bill5.BackColor = System.Drawing.Color.Transparent;
+            this.Bill5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bill5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Bill5.FlatAppearance.BorderSize = 0;
+            this.Bill5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Bill5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bill5.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bill5.Location = new System.Drawing.Point(21, 50);
+            this.Bill5.Name = "Bill5";
+            this.Bill5.Size = new System.Drawing.Size(81, 76);
+            this.Bill5.TabIndex = 49;
+            this.Bill5.Text = "₱5";
+            this.Bill5.UseVisualStyleBackColor = false;
+            this.Bill5.Click += new System.EventHandler(this.BillsButton_Click);
+            this.Bill5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseDown);
+            this.Bill5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseUp);
+            // 
+            // Bill20
+            // 
+            this.Bill20.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bill20.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Bill20.FlatAppearance.BorderSize = 0;
+            this.Bill20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Bill20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bill20.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bill20.Location = new System.Drawing.Point(21, 132);
+            this.Bill20.Name = "Bill20";
+            this.Bill20.Size = new System.Drawing.Size(215, 76);
+            this.Bill20.TabIndex = 48;
+            this.Bill20.Text = "₱20";
+            this.Bill20.UseVisualStyleBackColor = false;
+            this.Bill20.Click += new System.EventHandler(this.BillsButton_Click);
+            // 
+            // Bill1000
+            // 
+            this.Bill1000.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill1000.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bill1000.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Bill1000.FlatAppearance.BorderSize = 0;
+            this.Bill1000.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Bill1000.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill1000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bill1000.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill1000.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bill1000.Location = new System.Drawing.Point(21, 460);
+            this.Bill1000.Name = "Bill1000";
+            this.Bill1000.Size = new System.Drawing.Size(215, 76);
+            this.Bill1000.TabIndex = 47;
+            this.Bill1000.Text = "₱1000";
+            this.Bill1000.UseVisualStyleBackColor = false;
+            this.Bill1000.Click += new System.EventHandler(this.BillsButton_Click);
+            // 
+            // Bill500
+            // 
+            this.Bill500.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill500.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bill500.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Bill500.FlatAppearance.BorderSize = 0;
+            this.Bill500.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Bill500.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill500.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bill500.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill500.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bill500.Location = new System.Drawing.Point(21, 378);
+            this.Bill500.Name = "Bill500";
+            this.Bill500.Size = new System.Drawing.Size(215, 76);
+            this.Bill500.TabIndex = 46;
+            this.Bill500.Text = "₱500";
+            this.Bill500.UseVisualStyleBackColor = false;
+            this.Bill500.Click += new System.EventHandler(this.BillsButton_Click);
+            // 
+            // Bill100
+            // 
+            this.Bill100.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bill100.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Bill100.FlatAppearance.BorderSize = 0;
+            this.Bill100.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Bill100.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bill100.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill100.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bill100.Location = new System.Drawing.Point(21, 296);
+            this.Bill100.Name = "Bill100";
+            this.Bill100.Size = new System.Drawing.Size(215, 76);
+            this.Bill100.TabIndex = 45;
+            this.Bill100.Text = "₱100";
+            this.Bill100.UseVisualStyleBackColor = false;
+            this.Bill100.Click += new System.EventHandler(this.BillsButton_Click);
+            // 
+            // Bill50
+            // 
+            this.Bill50.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bill50.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Bill50.FlatAppearance.BorderSize = 0;
+            this.Bill50.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Bill50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bill50.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill50.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bill50.Location = new System.Drawing.Point(21, 214);
+            this.Bill50.Name = "Bill50";
+            this.Bill50.Size = new System.Drawing.Size(215, 76);
+            this.Bill50.TabIndex = 44;
+            this.Bill50.Text = "₱50";
+            this.Bill50.UseVisualStyleBackColor = false;
+            this.Bill50.Click += new System.EventHandler(this.BillsButton_Click);
+            // 
+            // Bill10
+            // 
+            this.Bill10.BackColor = System.Drawing.Color.Transparent;
+            this.Bill10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bill10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Bill10.FlatAppearance.BorderSize = 0;
+            this.Bill10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Bill10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bill10.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bill10.Location = new System.Drawing.Point(155, 50);
+            this.Bill10.Name = "Bill10";
+            this.Bill10.Size = new System.Drawing.Size(81, 76);
+            this.Bill10.TabIndex = 71;
+            this.Bill10.Text = "₱10";
+            this.Bill10.UseVisualStyleBackColor = false;
+            // 
             // SettleCheckForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(771, 560);
+            this.Controls.Add(this.Bill10);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ClearTenderAmountButton);
@@ -726,5 +740,6 @@
         internal System.Windows.Forms.Button Button1;
         internal System.Windows.Forms.TextBox txtTenderAmount;
         internal System.Windows.Forms.Label lblTenderAmount;
+        internal System.Windows.Forms.Button Bill10;
     }
 }
