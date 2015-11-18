@@ -8,5 +8,6 @@ namespace CSFPOSWare.helpers
 {
     class DatabaseHelper
     {
+        //added comment to this
     }
 }
