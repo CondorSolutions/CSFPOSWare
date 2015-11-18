@@ -144,13 +144,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompositeModels\SaleInfo.cs" />
+    <Compile Include="CompositeModels\SaleInfoUtil.cs" />
+    <Compile Include="CompositeModels\Seat.cs" />
+    <Compile Include="CSFPOSWareContext.cs" />
+    <Compile Include="DAO\BaseDAO.cs" />
+    <Compile Include="DAO\CSConfigurationDAO.cs" />
+    <Compile Include="DAO\CSSaleDAO.cs" />
+    <Compile Include="DAO\CSSaleItemDAO.cs" />
+    <Compile Include="DAO\CSSaleItemDiscountDAO.cs" />
+    <Compile Include="DAO\CSSaleItemTaxDAO.cs" />
+    <Compile Include="DAO\ItemDAO.cs" />
+    <Compile Include="DAO\MaintenanceDAO.cs" />
+    <Compile Include="DAO\SaleDAO.cs" />
+    <Compile Include="DAO\SaleItemDAO.cs" />
+    <Compile Include="DAO\SaleItemDiscountDAO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SettleCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettleCheckForm.designer.cs">
+      <DependentUpon>SettleCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettleCheckFormHelper.cs" />
     <Compile Include="helpers\DatabaseHelper.cs" />
+    <Compile Include="Main.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\Configuration.cs" />
     <Compile Include="Models\CSConfiguration.cs" />
@@ -176,6 +199,9 @@
     <Compile Include="Utils\Util.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettleCheckForm.resx">
+      <DependentUpon>SettleCheckForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -204,6 +230,7 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
