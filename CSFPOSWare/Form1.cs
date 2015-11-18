@@ -23,6 +23,7 @@ namespace CSFPOSWare
             //ok good!
             //fetch it!
             //comment
+            //comment 2
         }
     }
 }
