@@ -84,7 +84,7 @@ namespace CSFPOSWare.Forms
             button.FlatAppearance.BorderSize = 0;
             button.Name = mediaButtonPrefix + mediaIndex;
 
-            //button.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.ButtonBGBlank));
+            button.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.ButtonBGBlank));
             button.BackgroundImageLayout = ImageLayout.Stretch;
 
             return button;

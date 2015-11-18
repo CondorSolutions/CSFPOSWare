@@ -600,7 +600,7 @@
             // CloseButton
             // 
             this.CloseButton.BackColor = System.Drawing.Color.LightBlue;
-            //this.CloseButton.BackgroundImage = global::CSFPOSWareV3.Properties.Resources.ButtonBGBlank;
+            this.CloseButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CloseButton.BackgroundImage")));
             this.CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CloseButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.CloseButton.FlatAppearance.BorderSize = 0;

@@ -51,13 +51,13 @@ namespace CSFPOSWare.Forms
         public void Buttons_MouseDown(object sender, MouseEventArgs e)
         {
             Button b = (Button)sender;
-            //b.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.ButtonBGBlankPressed));
+            b.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.ButtonBGBlankPressed));
         }
 
         public void Buttons_MouseUp(object sender, MouseEventArgs e)
         {
             Button b = (Button)sender;
-            //b.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.ButtonBGBlank));
+            b.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.ButtonBGBlank));
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
