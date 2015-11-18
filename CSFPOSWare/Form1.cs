@@ -21,6 +21,8 @@ namespace CSFPOSWare
         {
             //comment
             //ok good!
+
+            //comment
         }
     }
 }
