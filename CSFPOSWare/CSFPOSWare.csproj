@@ -232,7 +232,34 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\coin_P5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_P10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBGBlank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBGBlankPressed.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

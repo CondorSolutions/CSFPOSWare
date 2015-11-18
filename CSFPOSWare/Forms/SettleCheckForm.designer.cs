@@ -41,6 +41,7 @@
             this.Label1 = new System.Windows.Forms.Label();
             this.txtTenderAmount = new System.Windows.Forms.TextBox();
             this.lblTenderAmount = new System.Windows.Forms.Label();
+            this.Bill10 = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.ClearTenderAmountButton = new System.Windows.Forms.Button();
@@ -62,7 +63,6 @@
             this.Bill500 = new System.Windows.Forms.Button();
             this.Bill100 = new System.Windows.Forms.Button();
             this.Bill50 = new System.Windows.Forms.Button();
-            this.Bill10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -191,6 +191,25 @@
             this.lblTenderAmount.TabIndex = 50;
             this.lblTenderAmount.Text = "Tender Amount:";
             // 
+            // Bill10
+            // 
+            this.Bill10.BackColor = System.Drawing.Color.Transparent;
+            this.Bill10.BackgroundImage = global::CSFPOSWare.Properties.Resources.coin_P10;
+            this.Bill10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bill10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Bill10.FlatAppearance.BorderSize = 0;
+            this.Bill10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Bill10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bill10.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bill10.Location = new System.Drawing.Point(155, 50);
+            this.Bill10.Name = "Bill10";
+            this.Bill10.Size = new System.Drawing.Size(81, 76);
+            this.Bill10.TabIndex = 71;
+            this.Bill10.Text = "₱10";
+            this.Bill10.UseVisualStyleBackColor = false;
+            // 
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.LightBlue;
@@ -215,7 +234,7 @@
             // CloseButton
             // 
             this.CloseButton.BackColor = System.Drawing.Color.LightBlue;
-            this.CloseButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CloseButton.BackgroundImage")));
+            this.CloseButton.BackgroundImage = global::CSFPOSWare.Properties.Resources.ButtonBGBlank;
             this.CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CloseButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.CloseButton.FlatAppearance.BorderSize = 0;
@@ -523,11 +542,12 @@
             // Bill5
             // 
             this.Bill5.BackColor = System.Drawing.Color.Transparent;
+            this.Bill5.BackgroundImage = global::CSFPOSWare.Properties.Resources.coin_P5;
             this.Bill5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bill5.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Bill5.FlatAppearance.BorderSize = 0;
             this.Bill5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Bill5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Bill5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bill5.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bill5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -544,6 +564,7 @@
             // Bill20
             // 
             this.Bill20.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill20.BackgroundImage = global::CSFPOSWare.Properties.Resources.bill_20;
             this.Bill20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bill20.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Bill20.FlatAppearance.BorderSize = 0;
@@ -563,6 +584,7 @@
             // Bill1000
             // 
             this.Bill1000.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill1000.BackgroundImage = global::CSFPOSWare.Properties.Resources.bill_1000;
             this.Bill1000.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bill1000.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Bill1000.FlatAppearance.BorderSize = 0;
@@ -582,6 +604,7 @@
             // Bill500
             // 
             this.Bill500.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill500.BackgroundImage = global::CSFPOSWare.Properties.Resources.bill_500;
             this.Bill500.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bill500.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Bill500.FlatAppearance.BorderSize = 0;
@@ -601,6 +624,7 @@
             // Bill100
             // 
             this.Bill100.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill100.BackgroundImage = global::CSFPOSWare.Properties.Resources.bill_100;
             this.Bill100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bill100.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Bill100.FlatAppearance.BorderSize = 0;
@@ -620,6 +644,7 @@
             // Bill50
             // 
             this.Bill50.BackColor = System.Drawing.Color.LightBlue;
+            this.Bill50.BackgroundImage = global::CSFPOSWare.Properties.Resources.bill_50;
             this.Bill50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bill50.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Bill50.FlatAppearance.BorderSize = 0;
@@ -635,24 +660,6 @@
             this.Bill50.Text = "₱50";
             this.Bill50.UseVisualStyleBackColor = false;
             this.Bill50.Click += new System.EventHandler(this.BillsButton_Click);
-            // 
-            // Bill10
-            // 
-            this.Bill10.BackColor = System.Drawing.Color.Transparent;
-            this.Bill10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bill10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Bill10.FlatAppearance.BorderSize = 0;
-            this.Bill10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Bill10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.Bill10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bill10.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bill10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bill10.Location = new System.Drawing.Point(155, 50);
-            this.Bill10.Name = "Bill10";
-            this.Bill10.Size = new System.Drawing.Size(81, 76);
-            this.Bill10.TabIndex = 71;
-            this.Bill10.Text = "₱10";
-            this.Bill10.UseVisualStyleBackColor = false;
             // 
             // SettleCheckForm
             // 
