@@ -198,17 +198,18 @@
             this.Bill10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bill10.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Bill10.FlatAppearance.BorderSize = 0;
-            this.Bill10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Bill10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.Bill10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Bill10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Bill10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bill10.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bill10.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bill10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bill10.Location = new System.Drawing.Point(155, 50);
+            this.Bill10.Location = new System.Drawing.Point(135, 50);
             this.Bill10.Name = "Bill10";
             this.Bill10.Size = new System.Drawing.Size(81, 76);
             this.Bill10.TabIndex = 71;
             this.Bill10.Text = "₱10";
             this.Bill10.UseVisualStyleBackColor = false;
+            this.Bill10.Click += new System.EventHandler(this.BillsButton_Click);
             // 
             // btnReset
             // 
@@ -228,6 +229,7 @@
             this.btnReset.TabIndex = 70;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseDown);
             this.btnReset.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseUp);
             // 
@@ -546,20 +548,18 @@
             this.Bill5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bill5.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Bill5.FlatAppearance.BorderSize = 0;
-            this.Bill5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Bill5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Bill5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Bill5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bill5.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bill5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bill5.Location = new System.Drawing.Point(21, 50);
+            this.Bill5.Location = new System.Drawing.Point(48, 50);
             this.Bill5.Name = "Bill5";
             this.Bill5.Size = new System.Drawing.Size(81, 76);
             this.Bill5.TabIndex = 49;
             this.Bill5.Text = "₱5";
             this.Bill5.UseVisualStyleBackColor = false;
             this.Bill5.Click += new System.EventHandler(this.BillsButton_Click);
-            this.Bill5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseDown);
-            this.Bill5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Buttons_MouseUp);
             // 
             // Bill20
             // 

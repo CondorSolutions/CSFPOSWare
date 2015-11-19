@@ -24,8 +24,8 @@ namespace CSFPOSWare
             switch (function)
             {
                 case "SETTLE":
-                    SettleCheckFormHelper settleCheckFormHelper = new SettleCheckFormHelper(csSale);
-                    SettleCheckForm settleCheckForm = new SettleCheckForm(settleCheckFormHelper);
+                    //SettleCheckFormHelper settleCheckFormHelper = new SettleCheckFormHelper(csSale);
+                    SettleCheckForm settleCheckForm = new SettleCheckForm(csSale);
                     settleCheckForm.ShowDialog();
                     break;
                 default://Sale Info
